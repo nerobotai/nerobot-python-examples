@@ -55,8 +55,7 @@ params = {
   }
 }
 
-# bulk_result_response = client.get_bulk_results(bulk_create_response['job_id'],params)
-bulk_result_response = client.get_bulk_results('779',params)
+bulk_result_response = client.get_bulk_results(bulk_create_response['job_id'],params)
 print(bulk_result_response['results']['data'])
 
 
@@ -100,6 +99,5 @@ params = {
 }
 
 bulk_result_response = client.get_crawl_results(crawl_create_response['job_id'],params)
-# bulk_crawl_response = client.get_crawl_results('871',params)
 print(bulk_crawl_response['results']['data'])
 
